@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#42000000">
+
+    <LinearLayout
+        android:id="@+id/topController"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:background="#42000000">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@null"
+            android:layout_marginStart="60dp"
+            android:padding="10dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/videoTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:freezesText="true"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:textStyle="bold"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            tools:text="@tools:sample/full_names"/>
+
+        <ImageButton
+            android:id="@+id/moreFeaturesBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_round_menu"
+            android:background="?attr/roundSelector"
+            android:contentDescription="@string/features_btn"
+            android:layout_marginEnd="60dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/prevBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:background="?attr/roundSelector"
+        android:clickable="true"
+        android:contentDescription="@string/prev_btn"
+        android:focusable="true"
+        android:src="@drawable/ic_round_skip_previous"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playPauseBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/playPauseBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:background="?attr/roundSelector"
+        android:clickable="true"
+        android:contentDescription="@string/play_btn"
+        android:focusable="true"
+        android:src="@drawable/ic_round_play_arrow"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/nextBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:background="?attr/roundSelector"
+        android:clickable="true"
+        android:contentDescription="@string/next_btn"
+        android:focusable="true"
+        android:src="@drawable/ic_round_skip_next"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playPauseBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bottomController"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@id/exo_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"/>
+
+            <com.google.android.exoplayer2.ui.DefaultTimeBar
+                android:id="@id/exo_progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                app:buffered_color="#80FFFFFF"
+
+                app:layout_constraintHorizontal_bias="0.444"
+                app:played_color="@color/white"
+                app:scrubber_color="@color/white"
+                app:scrubber_disabled_size="10dp"
+                app:scrubber_enabled_size="15dp"
+                app:unplayed_color="#80FFFFFF"
+
+                tools:progress="20"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/exo_duration"
+                app:layout_constraintStart_toEndOf="@id/exo_position"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@id/exo_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="59:59"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:paddingStart="0dp"
+                android:paddingEnd="20dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomStartController"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        android:gravity="start|bottom">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="?attr/roundSelector"
+            android:src="@drawable/ic_round_keyboard_arrow_down"
+            android:contentDescription="@string/back_btn"
+            app:tint="@color/white"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/shuffleBtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="?attr/roundSelector"
+            android:src="@drawable/ic_round_shuffle"
+            android:contentDescription="@string/shuffle_btn"
+
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/repeatBtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="?attr/roundSelector"
+            android:src="@drawable/ic_round_repeat"
+            android:contentDescription="@string/repeat_btn"
+
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomController"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="end|bottom">
+
+        <ImageButton
+            android:id="@+id/favoriteBtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="?attr/roundSelector"
+            android:src="@drawable/ic_round_favorite_border"
+            android:contentDescription="@string/favorite"
+            app:tint="@color/white"
+
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/orientationBtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="?attr/roundSelector"
+            android:src="@drawable/ic_round_screen_rotation"
+            android:contentDescription="@string/orientation"
+            app:tint="@color/white"
+
+            android:layout_marginBottom="10dp"/>
+
+        <ImageButton
+            android:id="@+id/fullScreenBtn"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="?attr/roundSelector"
+            android:src="@drawable/ic_round_fullscreen"
+            android:contentDescription="@string/fullscreen_btn"
+            app:tint="@color/white"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

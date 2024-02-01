@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="bottom_nav_height">72dp</dimen>
+    <dimen name="appbar_elevation">4dp</dimen>
+
+    <dimen name="mini_player_height_expanded">128dp</dimen>
+    <dimen name="mini_player_height">56dp</dimen>
+
+    <dimen name="m3_card_corner_radius">16dp</dimen>
+
+    <dimen name="seekbar_padding">16dp</dimen>
+
+    <dimen name="status_bar_padding">0dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <dimen name="notification_big_image_size">112dp</dimen>
+</resources>

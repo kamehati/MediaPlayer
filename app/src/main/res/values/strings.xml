@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Media Player</string>
+
+    <string name="video">動画</string>
+    <string name="music">音楽</string>
+    <string name="favorite">お気に入り</string>
+    <string name="playlist">プレイリスト</string>
+
+    <string name="tab_song">曲</string>
+    <string name="tab_song_folder">フォルダー</string>
+    <string name="tab_album">アルバム</string>
+    <string name="tab_artist">アーティスト</string>
+
+    <string name="action_grid_size">グリッド</string>
+    <string name="grid_size_1">1</string>
+    <string name="grid_size_2">2</string>
+    <string name="grid_size_3">3</string>
+    <string name="grid_size_4">4</string>
+    <string name="action_sort_order">ソート</string>
+    <string name="action_settings">設定</string>
+    
+    <string name="sort_order_a_z">昇順</string>
+    <string name="sort_order_z_a">降順</string>
+    <string name="sort_order_artist">アーティスト</string>
+    <string name="sort_order_album">アルバム</string>
+    <string name="sort_order_year">年</string>
+    <string name="sort_order_date">日付</string>
+    <string name="sort_order_date_modified">編集日別</string>
+
+    <string name="sort_order_number_of_songs">曲数順</string>
+
+    <string name="sort_order_song_count_asc">曲数順(昇)</string>
+    <string name="sort_order_song_count_desc">曲数順(降)</string>
+
+    <string name="shuffle">シャッフル</string>
+    <string name="empty_text_emoji">empty</string>
+    <string name="empty">Empty</string>
+
+    <string name="action_add_to_playlist">プレイリストに追加</string>
+    <string name="action_delete_to_playlist_song">プレイリストから削除</string>
+    <string name="action_details">詳細</string>
+
+    <string name="label_file_name">ファイル</string>
+    <string name="label_file_path">ディレクトリ</string>
+    <string name="label_file_size">サイズ</string>
+    <string name="label_file_format">フォーマット</string>
+    <string name="label_track_length">長さ</string>
+    <string name="label_bit_rate">ビットレート</string>
+    <string name="label_sampling_rate">サンプリングレート</string>
+    <string name="label_last_modified">最終更新日</string>
+
+    <string name="permission_message">このアプリはオーディオデータの取得、再生のために内部ストレージへのアクセス許可を求めています</string>
+    <string name="permission_deny">許可を得られませんでした</string>
+    <string name="permission_ok">許可を得てからアプリを再起動してください</string>
+
+    <string name="playlist_created_sucessfully">プレイリスト %s を作成しました</string>
+    <string name="added_song_count_to_playlist">%d 個の曲を %s に追加しました</string>
+
+    <string name="action_new_playlist">新しいプレイリスト</string>
+    <string name="add_playlist_title">"プレイリストに追加"</string>
+    <string name="playlist_name_empty">"プレイリストの名前"</string>
+    <string name="new_playlist_title">新しいプレイリスト</string>
+    <string name="create_action">作成</string>
+    <string name="action_rename">名前の変更</string>
+    <string name="action_delete">削除</string>
+    <string name="rename_playlist_title">プレイリストの名前を変更</string>
+    <string name="delete_playlists_title">プレイリストの削除</string>
+    <string name="delete_playlist_title">プレイリストの削除</string>
+    <string name="delete_x_playlists">
+        <![CDATA[プレイリスト <b>%1$d</b> を削除しますか?]]>
+    </string>
+    <string name="delete_playlist_x">
+        <![CDATA[プレイリスト <b>%1$s</b> を削除しますか?]]>
+    </string>
+
+    <string name="song">曲</string>
+    <string name="folder">フォルダー</string>
+
+    <string name="album_details_image">アルバムジャケット</string>
+    <string name="album">アルバム</string>
+    <string name="video_details_image">ビデオジャケット</string>
+    <string name="artist">アーティスト</string>
+    <string name="artist_details_image">アーティストジャケット</string>
+    <string name="song_details_image">ソングジャケット</string>
+
+    <string name="action_play_all">全て再生</string>
+
+    <plurals name="albumSongs">
+        <item quantity="one">曲</item>
+        <item quantity="other">曲</item>
+    </plurals>
+
+    <string name="lock">ロック</string>
+    <string name="bright">0</string>
+    <string name="volume">0</string>
+    <string name="back_btn">戻る</string>
+    <string name="play_btn">再生</string>
+    <string name="orientation">回転</string>
+    <string name="repeat_btn">繰り返し</string>
+    <string name="shuffle_btn">ランダム</string>
+    <string name="fullscreen_btn">フルスクリーン</string>
+    <string name="action_fullscreen">フルスクリーン</string>
+    <string name="prev_btn">前へ</string>
+    <string name="next_btn">次へ</string>
+
+    <string name="x_selected">%1$d 個を選択中</string>
+    <string name="select_all">すべて選択</string>
+    <string name="x_all_song_details">%1$d曲</string>
+    <string name="x_all_video_details">%1$d本</string>
+
+    <string name="space" />
+
+    <string name="remove_songs_from_playlist_title">プレイリストから曲を削除する</string>
+    <string name="remove_x_songs_from_playlist"><![CDATA[<b>%1$d</b> をプレイリストから削除しますか？]]></string>
+    <string name="remove_song_from_playlist_title">プレイリストから曲を削除</string>
+    <string name="remove_song_x_from_playlist"><![CDATA[ <b>%1$s</b> をプレイリストから削除しますか？]]></string>
+
+    <string name="remove_action">削除</string>
+
+    <string name="action_cycle_repeat">リピートモード</string>
+    <string name="action_toggle_shuffle">シャッフルモード</string>
+
+    <string name="playing_notification_name">再生中の通知</string>
+    <string name="playing_notification_description">再生中の通知は操作ができます</string>
+    <string name="action_play_pause">再生/一時停止</string>
+    <string name="action_previous">前</string>
+    <string name="action_next">次</string>
+    <string name="action_play">再生</string>
+    <string name="action_cancel">停止</string>
+    <string name="action_toggle_favorite">お気に入り</string>
+    <string name="unplayable_file">この曲は再生できません</string>
+
+    <string name="brightness_property">%s %%</string>
+    <string name="loudness_property">%s %%</string>
+
+    <string name="action_brightness">明るさ調整</string>
+    <string name="action_loudness">音量調整</string>
+    <string name="action_queue">再生中のキュー</string>
+    <string name="action_pip_mode">PIPモード</string>
+
+    <string name="title_name">タイトル</string>
+    <string name="features_btn">動画メニュー</string>
+
+    <string name="reset">リセット</string>
+</resources>

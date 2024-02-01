@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_video"
+        android:icon="@drawable/ic_round_movie"
+        android:visible="true"
+        android:title="@string/video"/>
+
+    <item
+        android:id="@+id/action_music"
+        android:icon="@drawable/ic_round_audio_file"
+        android:visible="true"
+        android:title="@string/music"/>
+
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_round_favorite"
+        android:visible="true"
+        android:title="@string/favorite"/>
+
+    <item
+        android:id="@+id/action_playlist"
+        android:icon="@drawable/avd_playlist"
+        android:visible="true"
+        android:title="@string/playlist"/>
+
+</menu>

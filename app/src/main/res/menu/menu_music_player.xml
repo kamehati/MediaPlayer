@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_toggle_favorite"
+        android:icon="@drawable/ic_round_favorite_border"
+        android:title="@string/favorite"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_brightness"
+        android:title="@string/action_brightness"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_loudness"
+        android:title="@string/action_loudness"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_queue"
+        android:title="@string/action_queue"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_grid_size"
+        android:icon="@drawable/ic_round_grid_view"
+        android:title="@string/action_grid_size"
+        app:showAsAction="never">
+        <menu>
+            <!--
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_grid_size_1"
+                    android:title="@string/grid_size_1" />
+                <item
+                    android:id="@+id/action_grid_size_2"
+                    android:title="@string/grid_size_2" />
+                <item
+                    android:id="@+id/action_grid_size_3"
+                    android:title="@string/grid_size_3" />
+                <item
+                    android:id="@+id/action_grid_size_4"
+                    android:title="@string/grid_size_4" />
+            </group>
+            -->
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_sort_order"
+        android:icon="@drawable/ic_round_sort"
+        android:title="@string/action_sort_order"
+        app:showAsAction="never">
+        <menu></menu>
+    </item>
+
+    <item
+        android:orderInCategory="10"
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_round_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+</menu>

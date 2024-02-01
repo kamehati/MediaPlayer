@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/action_video">
+
+    <fragment
+        android:id="@+id/action_video"
+        android:name="com.example.elect.mediaplayer.fragments.video.VideoFolderFragment"
+        tools:layout="@layout/fragment_recycler_view"/>
+
+    <fragment
+        android:id="@+id/action_music"
+        android:name="com.example.elect.mediaplayer.fragments.music.MusicFragment"
+        tools:layout="@layout/fragment_music">
+    </fragment>
+
+    <fragment
+        android:id="@+id/action_favorite"
+        android:name="com.example.elect.mediaplayer.fragments.favorite.FavoriteFragment"
+        tools:layout="@layout/fragment_recycler_view"/>
+
+    <fragment
+        android:id="@+id/action_playlist"
+        android:name="com.example.elect.mediaplayer.fragments.playlist.PlaylistFragment"
+        tools:layout="@layout/fragment_recycler_view"/>
+
+    <fragment
+        android:id="@+id/action_albumDetails"
+        android:name="com.example.elect.mediaplayer.fragments.music.album.AlbumDetailsFragment"
+        tools:layout="@layout/fragment_album_artist_details">
+        <argument
+            android:name="extra_album_id"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/action_videoDetails"
+        android:name="com.example.elect.mediaplayer.fragments.video.VideoFolderDetailsFragment"
+        tools:layout="@layout/fragment_folder_details">
+        <argument
+            android:name="extra_video_folder_id"
+            app:argType="long"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/action_artistDetails"
+        android:name="com.example.elect.mediaplayer.fragments.music.artist.ArtistDetailsFragment"
+        tools:layout="@layout/fragment_album_artist_details">
+        <argument
+            android:name="extra_artist_id"
+            app:argType="long"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/action_songDetails"
+        android:name="com.example.elect.mediaplayer.fragments.music.folder.SongFolderDetailsFragment"
+        tools:layout="@layout/fragment_folder_details">
+        <argument
+            android:name="extra_song_folder_id"
+            app:argType="long"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/action_playlistDetails"
+        android:name="com.example.elect.mediaplayer.fragments.playlist.PlaylistDetailsFragment"
+        tools:layout="@layout/fragment_playlist_details">
+        <argument
+            android:name="extra_playlist"
+            app:argType="com.example.elect.mediaplayer.db.PlaylistWithMedias" />
+    </fragment>
+</navigation>

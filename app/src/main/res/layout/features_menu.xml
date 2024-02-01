@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_loudness"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/roundSelector"
+        android:clickable="true"
+        android:focusable="true"
+        app:icon="@drawable/ic_round_volume_mute"
+        app:iconTint="@color/md_white_1000"
+        app:iconGravity="top"
+        android:text="@string/action_loudness"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_queue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/roundSelector"
+        android:clickable="true"
+        android:focusable="true"
+        app:icon="@drawable/ic_round_queue_music"
+        app:iconTint="@color/md_white_1000"
+        app:iconGravity="top"
+        android:text="@string/action_queue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_PIPmode"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?attr/roundSelector"
+        android:clickable="true"
+        android:focusable="true"
+        app:icon="@drawable/ic_round_picture_in_picture"
+        app:iconTint="@color/md_white_1000"
+        app:iconGravity="top"
+        android:text="@string/action_pip_mode"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

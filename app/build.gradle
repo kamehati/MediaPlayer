@@ -1,0 +1,112 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id "kotlin-parcelize"
+    id "kotlin-kapt"
+    id "androidx.navigation.safeargs.kotlin"
+}
+
+android {
+    namespace 'com.example.elect.mediaplayer'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.elect.mediaplayer"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
+    }
+    kotlinOptions {
+        jvmTarget = '18'
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.4.0'
+    }
+    /*
+    packagingOptions {
+        resources {
+            excludes +=
+        }
+    }*/
+
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.activity:activity-ktx:1.8.0'
+
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.android.material:material:1.10.0'
+
+    implementation 'androidx.compose.material3:material3:1.2.0-alpha10'
+
+    implementation "androidx.preference:preference-ktx:$preference_version"
+
+    implementation 'dev.chrisbanes.insetter:insetter:0.6.1'
+
+    implementation 'com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:1.0.0'
+
+    def koin_version = '3.2.0'
+    implementation "io.insert-koin:koin-core:$koin_version"
+    implementation "io.insert-koin:koin-android:$koin_version"
+
+    implementation 'com.github.Adonai:jaudiotagger:2.3.15'
+
+    def glide_version = '4.13.1'
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+
+    implementation "androidx.palette:palette-ktx:1.0.0"
+
+    implementation 'me.zhanghai.android.fastscroll:library:1.1.7'
+
+    def room_version = '2.4.3'
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    implementation 'com.github.vkay94:DoubleTapPlayerView:1.0.4'
+    def exoplayer_version = '2.18.1'
+    implementation "com.google.android.exoplayer:exoplayer-core:$exoplayer_version"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$exoplayer_version"
+
+    def media3_exoplayer_version = '1.0.0-beta02'
+    implementation "androidx.media3:media3-exoplayer:$media3_exoplayer_version"
+    implementation "androidx.media3:media3-ui:$media3_exoplayer_version"
+    implementation "androidx.media3:media3-session:$media3_exoplayer_version"
+
+    implementation "com.google.android.exoplayer:exoplayer-core:2.19.1"
+    implementation "com.google.android.exoplayer:extension-mediasession:2.19.1"
+
+    implementation 'com.afollestad:material-cab:2.0.1'
+}
